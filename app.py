@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import skfuzzy as skfuzz
 from fuzzywuzzy import fuzz
+from flask_cors import CORS
 
 df = pd.read_csv('udemy_courses.csv')
 
@@ -23,6 +24,7 @@ medium_duration = skfuzz.trimf(duration_range, [min_duration, max_duration * 0.3
 long_duration = skfuzz.trimf(duration_range, [max_duration * 0.3, max_duration * 0.7, max_duration])
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/')
 def hello_world():
