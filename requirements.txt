@@ -1,0 +1,6 @@
+flask
+pandas
+numpy
+scikit-fuzzy
+fuzzy-wuzzy
+flask-cors
