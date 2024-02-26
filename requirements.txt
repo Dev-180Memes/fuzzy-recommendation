@@ -2,5 +2,5 @@ flask
 pandas
 numpy
 scikit-fuzzy
-fuzzy-wuzzy
+fuzzywuzzy
 flask-cors
